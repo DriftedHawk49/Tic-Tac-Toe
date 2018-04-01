@@ -1,0 +1,61 @@
+Tic Tac Toe
+In start , game will ask player 1 to choose his/her sign. Player 2's sign will automatically be assigned.
+
+Then Game will initiate with random start , every time , there would be a random starting player , either player 1 or player 2.
+then on any tile , player clicks , that tile will be assigned that sign , at every click check that if there are any three same signs in a row , or a diagonal. then the player with that sign wins the game , and create a leaderboard storing wins and loss of every player in a session.
+
+
+
+Note 1 - Check display:inline-table property & make use of that while making score board.
+
+Update 1 - HTML is made with developer CSS expect for Leader Board.
+
+
+
+For Circle - <i class="far fa-circle"></i>
+For Cross - <i class="fas fa-times"></i>
+
+
+
+Algorithm For watching the winning side = 
+	 make two arrays -> player1 array & player2 array
+	 assuming that array is sized 1-9 , at every grid pos , put a "1" at every place where a players places its mark.
+	 rest all the places should remain 0.
+	 At every click check for all possible permutations and combinations. 
+	 [
+	 	0:
+	 	1:
+	 	2:
+	 	3:
+	 	4:
+	 	5:
+	 	6:
+	 	7:
+	 	8:
+	 	9:
+	 ];
+	 put 1 at every index position , which ever position is marked by player.
+	 at every click check , if the possible permutations are there.
+	 Possible permutations are ->
+	 [123],[213],[312],[132],[231],[321]
+	 [147],[174],[417],[471],[714],[741]
+	 [159],[195],[519],[591],[915],[951]
+	 [456],[465],[546],[564],[645],[654]
+	 [789],[798],[879],[897],[978],[987]
+	 [258],[285],[528],[582],[852],[825]
+	 [369],[396],[639],[693],[936],[963]
+
+
+	 if any one is true , that person wins the game.
+
+	 STATUS - Algorithm has been made & implemented.
+
+
+	 TODO - Tic TAc gameplay area. Set specific thick borders to show seperate blocks. hide all other borders.
+
+	 style the bar at the top. 
+	 write JavaScript Code To display player markers at all times & don't change throughout the course of game.
+
+	 write media queries for the grid system to fit in always.
+
+	 UPDATE : Game is complete . Only Animations Left.
