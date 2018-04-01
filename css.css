@@ -29,15 +29,18 @@ h1{
 footer{
 	text-align: center;
 	border-top:3px solid black;
-	margin-top: 20px;
 	background-color: #292A29;
 	color: #C7C7C7;
-	font-size: 1.2em;
+	font-size: 0.8em;
 	text-shadow: 1px 1px black;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+
 }
 
 p{
-	text-align: center;	
+	text-align: center;
 }
 
 
@@ -55,7 +58,7 @@ p{
 	margin: auto;
 	text-align: center;
 	border-radius: 20px 20px 20px 20px;
-	background-color: #5EFB5E;
+	background-color:  #e5ffb7 ;
 }
 
 
@@ -70,7 +73,7 @@ div.initial {
 	margin-top: 20px;
 	margin-bottom: 5px;
 	font-size: 2em;
-	background-color: #CFF59A;
+	background-color:  #c9cbc5 ;
 	display: inline-block;
 	border-radius: 10px 10px 10px 10px;
 	border: 3px solid #006000;
@@ -91,7 +94,7 @@ div.choose {
 	padding: 5px 5px 5px 5px;
 }
 
-.status { 
+.status {
 	height: 30px;
 	width: 500px;
 	margin: auto;
@@ -219,6 +222,24 @@ div.game-box{
 	border-radius: 15px;
 }
 
+.b_links{
+	border: 1px solid white;
+	color:  #c9cbc5;
+	margin-right: 20px;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.b_links:hover {
+	background-color: #D7D0D0;
+	color:#292A29;
+	text-shadow: none;
+	font-weight: bolder;
+}
+
+
+
+
 
 
 
@@ -237,10 +258,10 @@ div.game-box{
 
 .status span {
 	border: 2px solid black;
-	background-color: #65DFB8; 
+	background-color: #65DFB8;
 	padding:3px 3px 3px 3px;
 	border-radius: 10px 10px 10px 10px;
-	box-shadow: 3px 3px 10px grey; 
+	box-shadow: 3px 3px 10px grey;
 }
 
 
@@ -332,8 +353,8 @@ p.start_info{
 }
 
 .box:focus {
-		background-color: #C2BDBD;
-		color: black;
+		background-color: #2e2e2c ;
+		color:  #d8dad4;
 		font-weight: bold;
 		border:none;
 
@@ -394,6 +415,19 @@ p.start_info{
 		font-size: 0.6em;
 		height: 20px;
 	}
+}
 
 
+
+@media(max-height: 780px),(max-width: 350px){
+	footer{
+		margin-top: 20px;
+		position: static;
+	}
+}
+
+@media(max-width:500px){
+	.b_links{
+		display: block;
+	}
 }
