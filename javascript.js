@@ -7,8 +7,8 @@ var pcircle = "<i class=\"far fa-circle\"></i>";
 var pres,status;
 var player1 = new player(1,"player1");
 var player2 = new player(2,"player2");
-var p1_arr = [0,0,0,0,0,0,0,0,0,0];
-var p2_arr = [0,0,0,0,0,0,0,0,0,0];
+var p1_arr = [];
+var p2_arr = [];
 
 
 
@@ -58,7 +58,7 @@ $(".choice").on("click",function(){
 			$(".p1mark")[0].innerHTML += pcircle;
 		}
 
-	
+
 });
 
 
@@ -103,6 +103,6 @@ $(".tiles").on("click",function(){
 		}
 	}
 
-			
+
 	}
 });

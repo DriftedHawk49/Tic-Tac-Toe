@@ -10,7 +10,7 @@ var player = function(index,name,choice,icon){
 var win_game = function(pl1,pl2){
 	if(pl1[0]==1&&pl1[1]==1&&pl1[2]==1){
 		return "p1w";
-	}
+			}
 	else if(pl2[0]==1&&pl2[1]==1&&pl2[2]==1){
 		return "p2w";
 	}
@@ -29,7 +29,7 @@ var win_game = function(pl1,pl2){
 	else if(pl1[0]==1&&pl1[3]==1&&pl1[6]==1){
 		return "p1w";
 	}
-	else if(pl2[0]==1&&pl2[3]==1&&pl1[6]==1){
+	else if(pl2[0]==1&&pl2[3]==1&&pl2[6]==1){
 		return "p2w";
 	}
 	else if(pl1[1]==1&&pl1[4]==1&&pl1[7]==1){
